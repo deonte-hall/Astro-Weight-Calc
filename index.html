@@ -2,10 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
     <title>Astro Weight Calculator</title>
   </head>
   <body>
+	  
+  <h1><b>Calculate Your Weight!</b></h1>
      <!-- Write your markup here  -->
+	  
+	  <div class = "dropDown">
+		  <div class = "planetButton">
+	  <h3>Select Your Planet:</h3> 
+		  <select id = "planets" name = "planets">
+		 <label>Planets</label>
+		</div>
+	  <option value = "Mars">Mars</option>
+	  <option value = "Pluto">Pluto</option>
+	  <option value = "Jupiter">Jupiter</option>
+	  <option value = "Neptune">Neptune</option>
+	  <option value = "Uranus">Uranus</option>
+	  <option value = "Saturn">Saturn</option>
+	  <option value = "Mercury">Mercury</option>
+	  <option value = "Earth">Earth</option>
+	  <option value = "Moon">Moon</option> 
+	  <option value = "Venus">Venus</option>
+	  <option value = "Sun">Sun</option>
+	 </select>
+	  
+	  
+	  </div>
+	  <br>
+	  
+  <input id="user-weight" type = "text" placeholder = "Weight(lbs)"/>  	
+	  <br>
+	  <br>
+     <button type = "button" onclick = "handleClickEvent()" id ="calculate-button">Calculate</button>
+     
+	 <p id="output">
+		 
+	 </p>
+
 
     <script src="main.js" charset="utf-8"></script>
   </body>
